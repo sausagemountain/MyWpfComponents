@@ -1,7 +1,24 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyWpfComponents.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Back" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#88F8F8FF</Value>
+    </Setting>
+    <Setting Name="Stroke" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#886495ED</Value>
+    </Setting>
+    <Setting Name="Ticks" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#88DA70D6</Value>
+    </Setting>
+    <Setting Name="Fill" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#88ADFF2F</Value>
+    </Setting>
+    <Setting Name="Positions" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;anyType /&gt;
+&lt;/ArrayOfAnyType&gt;</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

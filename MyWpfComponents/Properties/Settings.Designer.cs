@@ -8,22 +8,80 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyWpfComponents.Properties
-{
-
-
+namespace MyWpfComponents.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#88F8F8FF")]
+        public global::System.Windows.Media.Color Back {
+            get {
+                return ((global::System.Windows.Media.Color)(this["Back"]));
+            }
+            set {
+                this["Back"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#886495ED")]
+        public global::System.Windows.Media.Color Stroke {
+            get {
+                return ((global::System.Windows.Media.Color)(this["Stroke"]));
+            }
+            set {
+                this["Stroke"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#88DA70D6")]
+        public global::System.Windows.Media.Color Ticks {
+            get {
+                return ((global::System.Windows.Media.Color)(this["Ticks"]));
+            }
+            set {
+                this["Ticks"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#88ADFF2F")]
+        public global::System.Windows.Media.Color Fill {
+            get {
+                return ((global::System.Windows.Media.Color)(this["Fill"]));
+            }
+            set {
+                this["Fill"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfAnyType xmlns:xsi=\"http://www.w3" +
+            ".org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <" +
+            "anyType />\r\n</ArrayOfAnyType>")]
+        public global::System.Collections.ArrayList Positions {
+            get {
+                return ((global::System.Collections.ArrayList)(this["Positions"]));
+            }
+            set {
+                this["Positions"] = value;
             }
         }
     }

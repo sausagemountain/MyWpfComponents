@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWpfComponents"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Clock" 
+        Height="500" Width="500"
+        MinHeight="200" MinWidth="200"
+        Background="Transparent" AllowsTransparency="True"
+        WindowStyle="None" WindowStartupLocation="Manual"
+        ResizeMode="CanResizeWithGrip"
+        VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"
+        VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+        MouseEnter="MainWindow_OnMouseEnter" MouseLeave="MainWindow_OnMouseLeave"
+        SizeChanged="MainWindow_OnSizeChanged" Closing="MainWindow_OnClosing">
+
+    <Window.Resources>
+    </Window.Resources>
+
+    <Grid Name="MainGrid" MouseLeftButtonDown="Move"
+          VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Change Background" Tag="Back" Click="CustomizeColors"/>
+                <MenuItem Header="Change Tick Marks" Tag="Ticks" Click="CustomizeColors"/>
+                <MenuItem Header="Change Hands Outline" Tag="Stroke" Click="CustomizeColors"/>
+                <MenuItem Header="Change Hands Fill" Tag="Fill" Click="CustomizeColors"/>
+                <Separator/>
+                <MenuItem Header="Randomize Colors" Click="ChangeColors_OnClick"/>
+            </ContextMenu>
+        </Grid.ContextMenu>
+
+        <Grid Name="BackDrop"  Background="{DynamicResource Back2}" Visibility="Collapsed"/>
+
+        <local:Clock x:Name="Clock"></local:Clock>
+
+        <Button Name="CloseButton" Click="Close_Click" Margin="10" Height="20" Width="20" 
+                Background="Red"
+                VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed"/>
+
+        <Button Name="MinimizeButton" Click="Minimize_Click" Margin="40 10 " Height="20" Width="20" 
+                VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed"/>
+
+        <Button Name="ChangeColors" Click="ChangeColors_OnClick" Margin="15" Height="20" Width="20" 
+                VerticalAlignment="Bottom" HorizontalAlignment="Right" Visibility="Collapsed"/>
+
     </Grid>
 </Window>
